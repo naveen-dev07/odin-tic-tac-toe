@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif; /* Ya koi bhi bold sans-serif font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainbox {
+    max-width: 420px;
+    width: 90%;
+    background: #FFFFFF;
+    border: 4px solid #000000;
+    box-shadow: 10px 10px 0px #000000;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+/* Heading */
+.text-title {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+/* Score Board */
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    background: transparent; 
+    border: none; 
+    padding: 0;
+}
+
+.player-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #FF6B00;
+    font-weight: 800;
+    font-size: 13px;
+    border: 3px solid #000000;
+    border-radius: 8px; 
+    box-shadow: 4px 4px 0px #000000; 
+    width: 42%; 
+}
+
+.left-box {
+    justify-content: flex-start;
+}
+
+.right-box {
+    justify-content: flex-end;
+}
+
+.vs-text {
+    font-size: 28px; 
+    font-weight: 900; 
+    color: black;
+    text-transform: uppercase; 
+    font-style: italic; 
+    
+    text-shadow: 4px 4px 0px #fff; 
+    
+    letter-spacing: -1px;
+    
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.score {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.score {
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Status Bar */
+.status-bar {
+    font-weight: 800;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.winner-text {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Game Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 10px;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background: #fff;
+    border: 4px solid #000000;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.cell:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #000;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    border: 4px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #000;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn-primary {
+    background: #FF6B00;
+}
+
+.btn-outline {
+    background: #fff;
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #000;
+}
